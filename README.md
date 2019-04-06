@@ -8,6 +8,7 @@ Cryptile is a script to encrypt data by using XOR from the method Cipher in the 
 
 #### Setup
 > pip install cryptiles
+
 > python setup.py install
 
 
