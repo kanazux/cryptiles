@@ -4,7 +4,7 @@ from setuptools import setup
 setup(name='cryptiles',
       version='0.1',
       license='BSD2CLAUSE',
-      install_requires=[],
+      install_requires=['pycrypto'],
       packages=['cryptiles'],
       package_data={'cryptiles': ['cryptiles/*']},
       data_files=[('LICENSE')],
