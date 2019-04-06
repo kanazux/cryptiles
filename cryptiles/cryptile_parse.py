@@ -5,13 +5,15 @@
 from argparse import ArgumentParser
 
 
-def parse_args(object):
+def parse_args():
     """Define some args for cryptile."""
 
-    _parser = ArgumentParser(add_help=True, description=(
-        ("Cryptile returns a string or file encrypted with a key.\n"
-         "USAGE: cryptile [-f|-s] [string|path] -k passkey\n"
-         "Cryptile encrypt a file or string by time, do not use -f and -s together.\n")))
+    _parser = ArgumentParser(add_help=True, description=("""
+  Cryptile returns a string or file encrypted with a key.
+
+  USAGE: cryptile [-f|-s] [string|path] -k passkey.
+  Cryptile encrypt a file or string by time, do not use -f and -s together.
+  """))
 
     _parser.add_argument('-f', '--file', action='store', required=False,
                          help="Get the file path to encrypt.")

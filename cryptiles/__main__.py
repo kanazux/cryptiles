@@ -7,7 +7,7 @@ from .cryptile_parse import parse_args
 from .cryptile import crypt_data
 
 
-if __name__ == "__main__":
+def main():
     args = parse_args()
     _crypt = crypt_data(args.key)
 
@@ -24,3 +24,6 @@ if __name__ == "__main__":
             print(_crypt.encrypt(args.string))
         if args.decrypt:
             print(_crypt.decrypt(args.string))
+
+if __name__ == "__main__":
+    main()
